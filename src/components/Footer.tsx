@@ -51,15 +51,17 @@ export const Footer = () => {
             <ul className="mt-6 space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:hello@bhavnaambudkar.com"
+                  href="mailto:bhavna.ambudkar@sitpune.edu.in"
                   className="inline-flex items-center gap-2 hover:text-primary transition-colors"
                 >
-                  <Mail className="h-4 w-4" /> hello@bhavnaambudkar.com
+                  <Mail className="h-4 w-4" /> bhavna.ambudkar@sitpune.edu.in
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://in.linkedin.com/in/bhavna-ambudkar-2683a919"
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="inline-flex items-center gap-2 hover:text-primary transition-colors"
                 >
                   <Linkedin className="h-4 w-4" /> LinkedIn
@@ -67,10 +69,12 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.sitpune.edu.in/epic_committee"
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="inline-flex items-center gap-2 hover:text-primary transition-colors"
                 >
-                  <Twitter className="h-4 w-4" /> Twitter / X
+                  <Twitter className="h-4 w-4" /> EPIC · SIT Pune
                 </a>
               </li>
               <li>

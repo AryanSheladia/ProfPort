@@ -72,10 +72,10 @@ export const Contact = () => {
               <div>
                 <div className="text-xs uppercase tracking-[0.15em] text-muted-foreground">Email</div>
                 <a
-                  href="mailto:hello@bhavnaambudkar.com"
+                  href="mailto:bhavna.ambudkar@sitpune.edu.in"
                   className="text-foreground hover:text-primary transition-colors"
                 >
-                  hello@bhavnaambudkar.com
+                  bhavna.ambudkar@sitpune.edu.in
                 </a>
               </div>
             </li>
@@ -83,14 +83,14 @@ export const Contact = () => {
               <Phone className="h-5 w-5 text-primary mt-0.5" />
               <div>
                 <div className="text-xs uppercase tracking-[0.15em] text-muted-foreground">Phone</div>
-                <span className="text-foreground">+91 · by request</span>
+                <a href="tel:+919890094521" className="text-foreground hover:text-primary transition-colors">+91 98900 94521</a>
               </div>
             </li>
             <li className="flex items-start gap-4">
               <MapPin className="h-5 w-5 text-primary mt-0.5" />
               <div>
                 <div className="text-xs uppercase tracking-[0.15em] text-muted-foreground">Location</div>
-                <span className="text-foreground">Pune, India · Available globally</span>
+                <span className="text-foreground">Symbiosis Institute of Technology · Pune, Maharashtra, India</span>
               </div>
             </li>
           </ul>
