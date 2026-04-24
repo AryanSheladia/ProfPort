@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroBackground } from "@/components/HeroBackground";
+import portrait from "@/assets/bhavna-ambudkar.jpg";
 
 const stats = [
   { v: "25+", l: "Years in academia" },
-  { v: "9,200+", l: "LinkedIn community" },
+  { v: "25K", l: "Teachers via Mission10X" },
+  { v: "9,596", l: "LinkedIn followers" },
   { v: "Head", l: "E&TC · SIT Pune" },
-  { v: "AICTE", l: "IDEA Lab coordinator" },
 ];
 
 export const Hero = () => {
