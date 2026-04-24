@@ -2,12 +2,12 @@ import { SectionWrapper } from "@/components/SectionWrapper";
 import { Award } from "lucide-react";
 
 const items = [
-  { y: "2024", t: "Innovation Educator of the Year", o: "National Innovation Council" },
-  { y: "2023", t: "Featured · The Hindu BusinessLine", o: "On AI in design education" },
-  { y: "2023", t: "Distinguished Speaker", o: "Global Design Education Summit" },
-  { y: "2022", t: "Best Paper Award", o: "Intl. Conf. on Design Pedagogy" },
-  { y: "2021", t: "Mentor of the Year", o: "Startup India Yatra" },
-  { y: "2020", t: "Certified Design Thinking Coach", o: "IDEO U" },
+  { y: "2024", t: "President · EPIC Cell & IIC", o: "Symbiosis Institute of Technology, Pune" },
+  { y: "2023", t: "Coordinator · AICTE IDEA Lab", o: "All India Council for Technical Education" },
+  { y: "2022", t: "Cambridge International Certified", o: "Teacher and Trainer accreditation" },
+  { y: "—", t: "Editorial Board Member", o: "IJASRET — Intl. Journal of Advance Scientific Research" },
+  { y: "—", t: "Published Researcher", o: "ORCID 0000-0001-9744-836X · indexed since 2008" },
+  { y: "—", t: "Chief Mentor & Innovation Officer", o: "Symbiosis Institute of Technology, Pune" },
 ];
 
 export const Media = () => {

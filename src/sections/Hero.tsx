@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { HeroBackground } from "@/components/HeroBackground";
 
 const stats = [
-  { v: "5,000+", l: "Students mentored" },
-  { v: "120+", l: "Workshops led" },
-  { v: "40+", l: "Startups supported" },
-  { v: "15+", l: "Years in academia" },
+  { v: "25+", l: "Years in academia" },
+  { v: "9,200+", l: "LinkedIn community" },
+  { v: "Head", l: "E&TC · SIT Pune" },
+  { v: "AICTE", l: "IDEA Lab coordinator" },
 ];
 
 export const Hero = () => {
@@ -23,7 +23,7 @@ export const Hero = () => {
         >
           <Sparkles className="h-3.5 w-3.5 text-primary" />
           <span className="text-muted-foreground">
-            Now mentoring · Innovation cohort 2025
+            Professor & Head · Symbiosis Institute of Technology, Pune
           </span>
         </motion.div>
 
@@ -44,9 +44,10 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.25 }}
           className="lede mt-8 max-w-2xl"
         >
-          I'm Dr. Bhavna Ambudkar — an educator, strategist and design thinking
-          practitioner helping institutions, founders and leaders turn human
-          insight into measurable innovation.
+          I'm Dr. Bhavna Ambudkar — an intrapreneurial academician with 25+ years
+          in Electronics & Telecommunication, Cambridge International certified
+          teacher-trainer, Innovation Officer and Chief Mentor at Symbiosis
+          Institute of Technology, Pune.
         </motion.p>
 
         <motion.div

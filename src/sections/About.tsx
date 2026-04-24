@@ -2,11 +2,13 @@ import { SectionWrapper } from "@/components/SectionWrapper";
 import { motion } from "framer-motion";
 
 const timeline = [
-  { year: "2024", title: "Innovation strategist · National programs", body: "Leading design thinking adoption across multi-institutional innovation councils." },
-  { year: "2021", title: "Director, Design Thinking Cell", body: "Built a design-led learning ecosystem for 2,000+ students and 60+ faculty." },
-  { year: "2018", title: "PhD · Human-Centered Innovation", body: "Doctoral research on integrating empathy frameworks into engineering pedagogy." },
-  { year: "2014", title: "Faculty · Engineering & Entrepreneurship", body: "Designed studio-style courses bridging engineering, business and human sciences." },
-  { year: "2010", title: "Industry practice · Strategy & UX", body: "Worked across product, service and brand design with cross-functional teams." },
+  { year: "2024", title: "President · EPIC Cell, SIT Pune", body: "Leading the Entrepreneurship Promotion and Innovation Cell and the Institutions Innovation Council at Symbiosis Institute of Technology." },
+  { year: "2023", title: "Coordinator · AICTE IDEA Lab", body: "Anchoring SIT Pune's AICTE IDEA Lab — a maker-space turning student ideas into prototypes, IP and ventures." },
+  { year: "2022", title: "Professor & Head · E&TC, SIT Pune", body: "Heading the Electronics & Telecommunication department; building design-thinking-led curriculum and faculty capability." },
+  { year: "2020", title: "Cambridge International Certified", body: "Certified Teacher and Trainer (Cambridge International) — formalising two decades of pedagogical practice." },
+  { year: "2015", title: "Innovation Officer & Chief Mentor", body: "Mentoring student innovators, startup teams and faculty research across multi-disciplinary programs." },
+  { year: "2008", title: "Researcher · E&TC and signal systems", body: "First indexed publications on networks and signal processing — the foundation of an ongoing research practice." },
+  { year: "1999", title: "Faculty · Electronics & Telecommunication", body: "Began teaching in E&TC engineering — the start of a 25+ year academic journey." },
 ];
 
 const philosophy = [
@@ -20,8 +22,8 @@ export const About = () => {
     <SectionWrapper
       id="about"
       eyebrow="About"
-      title={<>An educator and strategist working at the <em className="font-display italic text-primary">edge of design and innovation.</em></>}
-      intro="Two decades of teaching, designing and leading — translating human-centered methods into outcomes for universities, enterprises and founders."
+      title={<>An intrapreneurial academician working at the <em className="font-display italic text-primary">edge of engineering, design and innovation.</em></>}
+      intro="25+ years of teaching, research and leadership in Electronics & Telecommunication — translating human-centered methods into outcomes for universities, students and industry partners."
     >
       <div className="grid lg:grid-cols-3 gap-10 lg:gap-16">
         <div className="space-y-8">
