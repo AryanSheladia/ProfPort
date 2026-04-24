@@ -22,8 +22,8 @@ export const About = () => {
     <SectionWrapper
       id="about"
       eyebrow="About"
-      title={<>An educator and strategist working at the <em className="font-display italic text-primary">edge of design and innovation.</em></>}
-      intro="Two decades of teaching, designing and leading — translating human-centered methods into outcomes for universities, enterprises and founders."
+      title={<>An intrapreneurial academician working at the <em className="font-display italic text-primary">edge of engineering, design and innovation.</em></>}
+      intro="25+ years of teaching, research and leadership in Electronics & Telecommunication — translating human-centered methods into outcomes for universities, students and industry partners."
     >
       <div className="grid lg:grid-cols-3 gap-10 lg:gap-16">
         <div className="space-y-8">
