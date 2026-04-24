@@ -2,19 +2,19 @@ import { SectionWrapper } from "@/components/SectionWrapper";
 import { motion } from "framer-motion";
 
 const timeline = [
-  { year: "2024", title: "President · EPIC Cell, SIT Pune", body: "Leading the Entrepreneurship Promotion and Innovation Cell and the Institutions Innovation Council at Symbiosis Institute of Technology." },
-  { year: "2023", title: "Coordinator · AICTE IDEA Lab", body: "Anchoring SIT Pune's AICTE IDEA Lab — a maker-space turning student ideas into prototypes, IP and ventures." },
-  { year: "2022", title: "Professor & Head · E&TC, SIT Pune", body: "Heading the Electronics & Telecommunication department; building design-thinking-led curriculum and faculty capability." },
-  { year: "2020", title: "Cambridge International Certified", body: "Certified Teacher and Trainer (Cambridge International) — formalising two decades of pedagogical practice." },
-  { year: "2015", title: "Innovation Officer & Chief Mentor", body: "Mentoring student innovators, startup teams and faculty research across multi-disciplinary programs." },
-  { year: "2008", title: "Researcher · E&TC and signal systems", body: "First indexed publications on networks and signal processing — the foundation of an ongoing research practice." },
-  { year: "1999", title: "Faculty · Electronics & Telecommunication", body: "Began teaching in E&TC engineering — the start of a 25+ year academic journey." },
+  { year: "2023 — Present", title: "Professor & Head · SIT Pune", body: "Heading the department at Symbiosis Institute of Technology, Pune — building design-thinking-led curriculum, faculty capability and industry partnerships." },
+  { year: "2023 — Present", title: "Incharge · EPIC Cell, SIT Pune", body: "Leading the Entrepreneurship Promotion & Innovation Cell — incubating student ventures, strategic initiatives and innovation programs." },
+  { year: "2022 — 2023", title: "Coordinator · EDSIC, DYPIT Pimpri", body: "Professor & Coordinator of the Entrepreneurship Development, Startup & Innovation Cell at Dr. D.Y. Patil Institute of Technology, Pimpri." },
+  { year: "2015 — 2023", title: "Professor & Dean · Industry-Institute & Alumni Interaction", body: "Eight+ years driving industry-institute collaboration and alumni networks at Dr. D.Y. Patil Institute of Engineering & Technology, Pune." },
+  { year: "2009 — 2012", title: "National Master Trainer · Mission10X, Wipro", body: "Recognised by Wipro Technologies as a Master Trainer in Mission10X — a Wipro initiative that enrolled 25,000 engineering teachers and was named by the World Economic Forum among the top 50 global talent-mobility initiatives." },
+  { year: "1998 — 2014", title: "HOD · Electronics Engineering, DYPIET", body: "16+ years heading Electronics Engineering — building department culture, pedagogy and student outcomes." },
+  { year: "1987 — 1991", title: "B.E. · College of Engineering, Badnera", body: "Engineering education foundation; later post-graduate work at COEP Technological University in Engineering & Critical Thinking." },
 ];
 
 const philosophy = [
   { t: "Empathy first", d: "Insight comes from listening before solving — design begins with people, not problems." },
-  { t: "Learning by doing", d: "Studios, prototypes and real artifacts beat abstract theory every single time." },
-  { t: "Real-world relevance", d: "Every workshop and course ships outcomes you can take to a boardroom or a community." },
+  { t: "Teaching as learning", d: "Application-oriented pedagogy that turns classrooms into spaces of lifelong, real-world impact." },
+  { t: "Rally around vision", d: "Multiskilling and a distinctive ability to align teams around a shared vision to deliver outstanding results." },
 ];
 
 export const About = () => {
@@ -23,7 +23,7 @@ export const About = () => {
       id="about"
       eyebrow="About"
       title={<>An intrapreneurial academician working at the <em className="font-display italic text-primary">edge of engineering, design and innovation.</em></>}
-      intro="25+ years of teaching, research and leadership in Electronics & Telecommunication — translating human-centered methods into outcomes for universities, students and industry partners."
+      intro="25+ years across Electronics & Telecommunication, Computer Networks, Computational Technologies, Digital & Biomedical Electronics and Education Technology — with a special tune to entrepreneurship, innovation and design thinking in training and industry applications."
     >
       <div className="grid lg:grid-cols-3 gap-10 lg:gap-16">
         <div className="space-y-8">
