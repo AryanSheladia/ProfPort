@@ -2,12 +2,12 @@ import { SectionWrapper } from "@/components/SectionWrapper";
 import { Award } from "lucide-react";
 
 const items = [
-  { y: "2024", t: "President · EPIC Cell & IIC", o: "Symbiosis Institute of Technology, Pune" },
-  { y: "2023", t: "Coordinator · AICTE IDEA Lab", o: "All India Council for Technical Education" },
-  { y: "2022", t: "Cambridge International Certified", o: "Teacher and Trainer accreditation" },
-  { y: "—", t: "Editorial Board Member", o: "IJASRET — Intl. Journal of Advance Scientific Research" },
-  { y: "—", t: "Published Researcher", o: "ORCID 0000-0001-9744-836X · indexed since 2008" },
-  { y: "—", t: "Chief Mentor & Innovation Officer", o: "Symbiosis Institute of Technology, Pune" },
+  { y: "2026", t: "Leadership in Innovation & Entrepreneurship", o: "Divine HR Forum & NIPM Pimpri-Chinchwad Chakan Chapter · Women Achievers Award" },
+  { y: "2025", t: "Entrepreneurship Excellence Award", o: "ENSIN Forum · Women Entrepreneurship Enabler — Ecosystem Enabler (Individual), hosted at VIT Pune" },
+  { y: "2026", t: "Session Chair · INDAM Conference", o: "Track on Entrepreneurship · hosted by Symbiosis Institute of Business Management (SIBM)" },
+  { y: "2009–12", t: "National Master Trainer · Mission10X", o: "Recognised by Wipro Technologies — initiative named among WEF top 50 global talent-mobility programs" },
+  { y: "Cert.", t: "Cambridge International Certified", o: "Teacher & Trainer accreditation" },
+  { y: "Role", t: "Chief Mentor & Innovation Officer", o: "Symbiosis Institute of Technology, Pune" },
 ];
 
 export const Media = () => {
