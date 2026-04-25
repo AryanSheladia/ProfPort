@@ -1,5 +1,5 @@
 import { SectionWrapper } from "@/components/SectionWrapper";
-import { Compass, Rocket, Lightbulb, Cpu, Users, ArrowUpRight } from "lucide-react";
+import { Compass, Rocket, Lightbulb, Brain, Users, ArrowUpRight } from "lucide-react";
 
 const items = [
   {
@@ -18,9 +18,9 @@ const items = [
     body: "Coaching founders from problem discovery to validated business models with rigour and craft.",
   },
   {
-    icon: Cpu,
-    title: "AI Integration",
-    body: "Embedding AI thoughtfully into design workflows — augmenting judgement rather than replacing it.",
+    icon: Brain,
+    title: "Problem Solving",
+    body: "Developing systematic approaches to identify root causes, generate innovative solutions and implement sustainable outcomes.",
   },
   {
     icon: Users,
@@ -39,9 +39,12 @@ export const Expertise = () => {
     >
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border rounded-2xl overflow-hidden">
         {items.map(({ icon: Icon, title, body }) => (
-          <div
+          <a
             key={title}
-            className="group relative bg-background p-8 md:p-10 hover:bg-secondary/40 transition-colors duration-500"
+            href="https://www.linkedin.com/in/bhavna-ambudkar-2683a919/details/skills/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-background p-8 md:p-10 hover:bg-secondary/40 transition-colors duration-500 cursor-pointer"
           >
             <div className="flex items-start justify-between">
               <div className="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-500">
@@ -53,7 +56,7 @@ export const Expertise = () => {
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
               {body}
             </p>
-          </div>
+          </a>
         ))}
         <div className="bg-primary text-primary-foreground p-8 md:p-10 flex flex-col justify-between">
           <div>

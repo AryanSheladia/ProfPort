@@ -7,7 +7,7 @@ import portrait from "@/assets/bhavna-ambudkar.jpg";
 const stats = [
   { v: "25+", l: "Years in academia" },
   { v: "25K", l: "Teachers via Mission10X" },
-  { v: "9,596", l: "LinkedIn followers" },
+  { v: "9600+", l: "LinkedIn followers" },
   { v: "Head", l: "E&TC · SIT Pune" },
 ];
 
