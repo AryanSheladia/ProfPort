@@ -75,7 +75,7 @@ export const Consultancy = () => {
     }
     setSubmitting(true);
     try {
-      const response = await fetch("http://localhost:5000/api/consultancy", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/consultancy`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(parsed.data),
