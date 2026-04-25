@@ -8,8 +8,11 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: "https://profport-1.onrender.com"
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
 }));
+app.options("*", cors());
+
 app.use(express.json());
 
 // MongoDB connection
