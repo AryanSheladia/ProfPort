@@ -74,17 +74,26 @@ export const Consultancy = () => {
       return;
     }
     setSubmitting(true);
-    // Persist locally for now — backend wiring (Lovable Cloud) can be enabled later.
     try {
-      const key = "consultation_requests";
-      const existing = JSON.parse(localStorage.getItem(key) || "[]");
-      existing.push({ ...parsed.data, createdAt: new Date().toISOString() });
-      localStorage.setItem(key, JSON.stringify(existing));
-      await new Promise((r) => setTimeout(r, 600));
+      const response = await fetch("http://localhost:5000/api/consultancy", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(parsed.data),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => null);
+        const message = errorData?.message || "Failed to submit request";
+        throw new Error(message);
+      }
+
       toast.success("Request received — I'll reply within 2 business days.");
       (e.target as HTMLFormElement).reset();
-    } catch {
-      toast.error("Something went wrong. Please try again.");
+      setService(services[0].id);
+      setTime(slots[0]);
+    } catch (error) {
+      console.error(error);
+      toast.error((error as Error).message || "Something went wrong. Please try again.");
     } finally {
       setSubmitting(false);
     }

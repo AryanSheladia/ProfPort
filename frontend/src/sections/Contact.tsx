@@ -35,15 +35,23 @@ export const Contact = () => {
     }
     setSubmitting(true);
     try {
-      const key = "contact_messages";
-      const existing = JSON.parse(localStorage.getItem(key) || "[]");
-      existing.push({ ...parsed.data, createdAt: new Date().toISOString() });
-      localStorage.setItem(key, JSON.stringify(existing));
-      await new Promise((r) => setTimeout(r, 500));
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(parsed.data),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => null);
+        const message = errorData?.message || "Failed to send message";
+        throw new Error(message);
+      }
+
       toast.success("Message sent — thank you for reaching out.");
       (e.target as HTMLFormElement).reset();
-    } catch {
-      toast.error("Something went wrong. Please try again.");
+    } catch (error) {
+      console.error(error);
+      toast.error((error as Error).message || "Something went wrong. Please try again.");
     } finally {
       setSubmitting(false);
     }
