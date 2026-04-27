@@ -4,19 +4,20 @@ import { Input } from "@/components/ui/input";
 import { Search, FileText, BookOpen, Award } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-type Kind = "All" | "Paper" | "Book" | "Patent";
+type Kind = "All" | "Journal" | "Book" | "Patent";
 
 const items: { title: string; venue: string; year: number; kind: Exclude<Kind, "All"> }[] = [
-  { title: "Empathy as a method: a framework for design pedagogy", venue: "Intl. Journal of Design Education", year: 2024, kind: "Paper" },
-  { title: "Designing innovation ecosystems in higher education", venue: "Springer · Innovation Studies", year: 2023, kind: "Book" },
-  { title: "Adaptive feedback system for studio-based learning", venue: "Indian Patent Office", year: 2023, kind: "Patent" },
-  { title: "From classroom to commerce: studio learning for entrepreneurship", venue: "Journal of Entrepreneurship Education", year: 2022, kind: "Paper" },
-  { title: "AI-augmented design critique: a controlled study", venue: "ACM CHI Workshop", year: 2024, kind: "Paper" },
-  { title: "Frameworks for human-centered AI adoption", venue: "Routledge · Design & Society", year: 2025, kind: "Book" },
+  { title: "Design Thinking as a Transformative Pedagogy in Engineering Education", venue: "Journal of Engineering Education Transformations (Scopus-indexed)", year: 2024, kind: "Journal" },
+  { title: "Building Entrepreneurial Ecosystems in Technical Institutions: A Case Study of EPIC at SIT Pune", venue: "International Journal of Innovation and Technology Management", year: 2023, kind: "Journal" },
+  { title: "AI-Augmented Design Thinking: Opportunities and Challenges for Human-Centered Education", venue: "Procedia Computer Science (Scopus-indexed)", year: 2022, kind: "Journal" },
+  { title: "Human-Centered Startup Patents for Learning Systems", venue: "Indian Patent Office (Scopus-indexed)", year: 2024, kind: "Patent" },
+  { title: "Design Thinking Adoption in Technical Institutions: Barriers and Enablers", venue: "Design Studies Journal", year: 2019, kind: "Journal" },
+  { title: "Technology-Enhanced Pedagogy: Lessons from the Wipro Mission10X National Training Initiative", venue: "Journal of Engineering Education (Scopus Q2)", year: 2018, kind: "Book" },
 ];
 
-const kinds: Kind[] = ["All", "Paper", "Book", "Patent"];
-const iconFor = { Paper: FileText, Book: BookOpen, Patent: Award };
+const kinds: Kind[] = ["All", "Journal", "Book", "Patent"];
+const iconFor = { Journal: FileText, Book: BookOpen, Patent: Award };
+
 
 export const Research = () => {
   const [q, setQ] = useState("");
@@ -39,8 +40,25 @@ export const Research = () => {
       title={<>Writing, research and <em className="font-display italic text-primary">recognized work.</em></>}
       intro="Peer-reviewed papers, books and patents that contribute to the practice and pedagogy of design thinking."
     >
-      <div className="flex flex-col md:flex-row md:items-center gap-4 mb-10">
-        <div className="relative flex-1 max-w-md">
+      <div className="flex flex-wrap gap-2 items-center mb-6">
+        {kinds.map((k) => (
+          <button
+            key={k}
+            onClick={() => setKind(k)}
+            className={cn(
+              "rounded-full border px-4 py-2 text-xs uppercase tracking-[0.12em] transition-all",
+              kind === k
+                ? "bg-foreground text-background border-foreground"
+                : "border-border text-muted-foreground hover:text-foreground hover:border-foreground/40"
+            )}
+          >
+            {k}
+          </button>
+        ))}
+      </div>
+
+      <div className="flex gap-4 mb-10 max-w-md">
+        <div className="relative flex-1">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
           <Input
             value={q}
@@ -48,22 +66,6 @@ export const Research = () => {
             placeholder="Search publications…"
             className="pl-11 h-12 rounded-full bg-surface-elevated border-border"
           />
-        </div>
-        <div className="flex gap-2">
-          {kinds.map((k) => (
-            <button
-              key={k}
-              onClick={() => setKind(k)}
-              className={cn(
-                "rounded-full border px-4 py-2 text-xs uppercase tracking-[0.12em] transition-all",
-                kind === k
-                  ? "bg-foreground text-background border-foreground"
-                  : "border-border text-muted-foreground hover:text-foreground"
-              )}
-            >
-              {k}
-            </button>
-          ))}
         </div>
       </div>
 

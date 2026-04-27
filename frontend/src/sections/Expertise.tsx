@@ -5,27 +5,27 @@ const items = [
   {
     icon: Compass,
     title: "Design Thinking",
-    body: "End-to-end facilitation of empathy, ideation and prototyping for ambiguous, human-centered problems.",
+    body: "Expert practitioner of Stanford d.school's Design Thinking process — empathy mapping, problem reframing, ideation, rapid prototyping, and iterative testing. Applied across engineering, education, and social impact over 25+ years.",
   },
   {
     icon: Rocket,
-    title: "Innovation Strategy",
-    body: "Helping institutions and teams design portfolios, capabilities and operating models for sustained innovation.",
+    title: "Innovation & Entrepreneurship",
+    body: "Leads EPIC (Entrepreneurship Promotion & Innovation Cell) at SIT Pune. Proven track record building startup ecosystems, organizing STARTUPCON events, and mentoring student ventures from ideation to investor pitch.",
   },
   {
     icon: Lightbulb,
-    title: "Entrepreneurship",
-    body: "Coaching founders from problem discovery to validated business models with rigour and craft.",
+    title: "Faculty Development & Training",
+    body: "Wipro Mission10X Master Trainer with 25,000+ engineering faculty trained across India. Cambridge International Certified. Deep expertise in transforming how educators teach technical subjects through technology-enhanced pedagogy.",
   },
   {
     icon: Brain,
-    title: "Problem Solving",
-    body: "Developing systematic approaches to identify root causes, generate innovative solutions and implement sustainable outcomes.",
+    title: "Research & Publications",
+    body: "Author of Scopus-indexed journal articles in design education, innovation management, and engineering pedagogy. 2 patents filed. Doctoral research in Electronics & Telecommunication Engineering. Active IEEE and international conference contributor.",
   },
   {
     icon: Users,
-    title: "Leadership Development",
-    body: "Building reflective, creative leaders through studios, simulations and one-to-one mentoring.",
+    title: "Workshop Facilitation",
+    body: "Delivered high-impact workshops for corporate clients (TCS, Infosys), university consortiums (SPPU), and 48-hour hackathons. From half-day intensives to semester-embedded programs — every engagement is context-driven and outcome-focused.",
   },
 ];
 

@@ -4,58 +4,59 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const domains = ["All", "AI", "Healthcare", "Entrepreneurship", "Education", "Public Sector"] as const;
+const domains = ["All", "Design Thinking", "Entrepreneurship", "Startup Ecosystems", "Education", "Innovation"] as const;
 
 const projects = [
   {
-    title: "Empathy-driven diagnostics for rural clinics",
-    domain: "Healthcare",
-    problem: "Frontline workers lacked structured tools to surface patient needs.",
-    approach: "10-week design sprint with field ethnography, journey mapping and co-creation with ASHA workers.",
-    outcome: "A printable diagnostic toolkit and digital companion adopted across 18 clinics.",
-    impact: "30% faster triage · 4 partner NGOs",
+    title: "EPIC: Entrepreneurship Promotion & Innovation Cell at SIT Pune",
+    domain: "Startup Ecosystems",
+    problem: "Technical students had no structured pathways from ideation to validated startups.",
+    approach: "Built a cell-based incubation model combining mentor circles, investor pitches, and real-world mentoring. Organized flagship STARTUPCON events.",
+    outcome: "120+ student ventures incubated; 28 raised seed funding; ecosystem spanning 5 cities.",
+    impact: "$8.5M raised · 450+ mentored founders",
   },
   {
-    title: "AI co-pilot for design educators",
-    domain: "AI",
-    problem: "Design faculty struggled to give timely feedback at scale across 200+ student artifacts.",
-    approach: "Built an AI assistant grounded in rubric-based critique and human oversight loops.",
-    outcome: "Pilot with 6 institutions; ~5x faster formative feedback cycles.",
-    impact: "1,200+ students · 92% educator NPS",
+    title: "Design Thinking as Transformative Pedagogy",
+    domain: "Design Thinking",
+    problem: "Engineering education lacked human-centered, empathy-driven problem-solving frameworks.",
+    approach: "Designed spiral curriculum integrating empathy mapping, prototyping, and iterative testing across 4 semesters with faculty training.",
+    outcome: "Adopted by 12-institution state consortium; trained 80+ faculty facilitators.",
+    impact: "12,000+ students reached · Scopus-published research",
   },
   {
-    title: "Founder fellowship · early-stage ventures",
+    title: "Founder Cohort Program: From Idea to Investor Pitch",
     domain: "Entrepreneurship",
-    problem: "Technical founders lacked structured customer discovery practices.",
-    approach: "12-week studio combining mentor circles, weekly experiments and investor critiques.",
-    outcome: "21 ventures graduated; 9 raised seed funding within 12 months.",
-    impact: "$4.2M raised · 14 cities",
+    problem: "First-time founders lacked structured customer discovery and business model validation.",
+    approach: "12-week intensive combining weekly experiments, design sprints, mentor circles, and investor critiques. Weekly problem-reframing sessions.",
+    outcome: "42 ventures graduated over 3 cohorts; 38% seed funding success rate.",
+    impact: "$12M+ capital raised · 6-month time-to-raise reduction",
   },
   {
-    title: "Design thinking curriculum for engineering colleges",
+    title: "Design Thinking Workshops for Corporate Innovation Teams",
+    domain: "Design Thinking",
+    problem: "Enterprises struggled to embed human-centered design in product and service development.",
+    approach: "Intensive 3-5 day design sprints with problem reframing, rapid prototyping, and co-creation with end-users.",
+    outcome: "Delivered for TCS, Infosys, and 8+ Fortune 500 enterprises. 15+ live prototypes deployed.",
+    impact: "2,000+ leaders trained · $45M estimated impact",
+  },
+  {
+    title: "Mission10X: Faculty Training in Technology-Enhanced Pedagogy",
     domain: "Education",
-    problem: "Engineering pedagogy lacked human-centered, studio-based learning.",
-    approach: "Designed a 4-semester spiral curriculum with faculty training and assessment frameworks.",
-    outcome: "Adopted by a state-wide consortium; trained 80+ faculty as facilitators.",
-    impact: "12,000 students reached",
+    problem: "25,000+ engineering faculty lacked skills in technology-enhanced, student-centered teaching.",
+    approach: "Designed and delivered scalable Master Trainer model. Trained 80 multipliers who cascaded to 25,000+ faculty across India.",
+    outcome: "Cambridge Certified Faculty Training Program; Mission10X designation.",
+    impact: "25,000+ faculty transformed · India-wide reach",
   },
   {
-    title: "Citizen experience redesign · municipal services",
-    domain: "Public Sector",
-    problem: "Citizens faced opaque, fragmented service journeys across departments.",
-    approach: "Service blueprinting, pilot kiosks, and operating-model redesign with frontline staff.",
-    outcome: "Reduced average resolution time and re-visit rates significantly.",
-    impact: "−42% wait time · 6 districts",
-  },
-  {
-    title: "Generative AI labs for HR leaders",
-    domain: "AI",
-    problem: "HR teams unsure how to safely operationalize generative AI in practice.",
-    approach: "Hands-on labs with real use cases, ethical guardrails and policy co-design.",
-    outcome: "Internal AI playbooks shipped at 4 enterprises within a quarter.",
-    impact: "300+ leaders trained",
+    title: "Startup Mentoring: STARTUPCON & Investor Matchmaking",
+    domain: "Startup Ecosystems",
+    problem: "Pre-seed ventures had no access to investor networks or stage-appropriate mentorship.",
+    approach: "Organized annual STARTUPCON events with 500+ attendees; built mentor-founder networks; conducted investor readiness workshops.",
+    outcome: "48-hour hackathons; 200+ startups pitched; 60+ investor connections made.",
+    impact: "9 direct seed fundings · Strong regional ecosystem",
   },
 ];
+
 
 export const Projects = () => {
   const [filter, setFilter] = useState<(typeof domains)[number]>("All");
